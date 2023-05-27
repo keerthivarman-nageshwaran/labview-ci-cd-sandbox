@@ -32,4 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          C:\Program Files\G-CLI\bin\g-cli.exe --lv-ver 2016 "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\script\runtest.vi" -- -s "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\test" -x "C:\Users\keerthivarman\Desktop\testResults.xml" -v 1
+          "C:\Program Files\G-CLI\bin\g-cli.exe" --lv-ver 2016 "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\script\runtest.vi" -- -s "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\test" -x "C:\Users\keerthivarman\Desktop\testResults.xml" -v 1
