@@ -33,10 +33,3 @@ jobs:
       - name: Run a multi-line script
         run: |
           & "C:\Program Files\G-CLI\bin\g-cli.exe" --lv-ver 2016 "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\script\runtest.vi" -- -s "D:\dev\git\LabVIEW\labview-ci-cd-sandbox\test" -x "C:\Users\keerthivarman\Desktop\testResults.xml" -v 1
-          
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action/composite@v2
-        if: always()
-        with:
-          files: |
-            C:\Users\keerthivarman\Desktop\testResults.xml
